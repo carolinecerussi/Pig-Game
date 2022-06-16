@@ -1,0 +1,30 @@
+
+
+
+function PigGame() { 
+  this.players = {};
+  this.currentScore = 0;
+}
+
+
+// potential option 2 for back logic of diceroll //
+// add score prototype practice //
+PigGame.prototype.addScore = function() {
+ let diceRoll = this.dice();
+ if (diceRoll !== 1) {
+  currentScore += diceRoll;
+ }else{ switchPlayer();
+ }
+};
+
+
+PigGame.prototype.rollDice = function() {
+  let dice = Math.floor(Math.random() * 6 + 1)
+  if (dice != 1) {
+    return dice;
+  } else {
+    return  0; 
+};
+}
+
+
